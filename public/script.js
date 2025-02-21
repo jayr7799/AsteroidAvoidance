@@ -316,7 +316,7 @@ gameStates[2] = async function(){
             var y = c.height/4 + 60;
             for(const highScore of scores)
             {
-                //scoreArray.push(highScore.score);
+                //scoreArray.push(highScore.score); //unsure why this wont populate array
                 ctx.fillText("High Score: " + highScore.score + " by: " + highScore.name, c.width/2, y);
                 y += 20;
                 index++;
