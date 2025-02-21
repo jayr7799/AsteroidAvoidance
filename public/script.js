@@ -304,7 +304,6 @@ gameStates[2] = async function(){
         ctx.font = "15px Arial";
         ctx.fillText("Press Enter to Start", c.width/2, c.height/4 + 20);
 
-
         //the comments are attempts of sorting, unsure as to why it would not put the scores into the array, was giving me all undefined values.
         try{
             
@@ -321,6 +320,7 @@ gameStates[2] = async function(){
                 ctx.fillText("High Score: " + highScore.score + " by: " + highScore.name, c.width/2, y);
                 y += 20;
                 index++;
+                //stop from showing more than 10 highscores
                 if(index >= 10){
                     break;
                 }
@@ -337,7 +337,6 @@ gameStates[2] = async function(){
         }
 
         ctx.restore();
-
     }
     else{
         ctx.save();
